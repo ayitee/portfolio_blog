@@ -2,14 +2,14 @@ export default function Header() {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
       <div>
-        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl bg-gradient-to-r from-purple-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">
-          Your Name
+        <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl bg-gradient-to-r from-slate-400 via-slate-300 to-slate-400 bg-clip-text text-transparent">
+          Matis Gaudin
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl">
-          Frontend Developer
+          Junior Full-stack Developer at Capgemini
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-slate-300">
-          I build accessible, pixel-perfect digital experiences for the web.
+          Student at EPITECH Digital School passionate about technology, finance, AI & ML, and game development.
         </p>
         
         {/* Navigation */}
@@ -17,33 +17,33 @@ export default function Header() {
           <ul className="mt-16 w-max">
             <li>
               <a className="group flex items-center py-3 active" href="#about">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-purple-400 group-focus-visible:w-16 group-focus-visible:bg-purple-400 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-300 group-focus-visible:text-purple-300">
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-400 group-focus-visible:w-16 group-focus-visible:bg-slate-400 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-300 group-focus-visible:text-slate-300">
                   About
                 </span>
               </a>
             </li>
             <li>
               <a className="group flex items-center py-3" href="#experience">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-purple-400 group-focus-visible:w-16 group-focus-visible:bg-purple-400 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-300 group-focus-visible:text-purple-300">
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-400 group-focus-visible:w-16 group-focus-visible:bg-slate-400 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-300 group-focus-visible:text-slate-300">
                   Experience
                 </span>
               </a>
             </li>
             <li>
-              <a className="group flex items-center py-3" href="#projects">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-purple-400 group-focus-visible:w-16 group-focus-visible:bg-purple-400 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-300 group-focus-visible:text-purple-300">
-                  Projects
+              <a className="group flex items-center py-3" href="#education">
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-400 group-focus-visible:w-16 group-focus-visible:bg-slate-400 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-300 group-focus-visible:text-slate-300">
+                  Education
                 </span>
               </a>
             </li>
             <li>
-              <a className="group flex items-center py-3" href="#blog">
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-purple-400 group-focus-visible:w-16 group-focus-visible:bg-purple-400 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-purple-300 group-focus-visible:text-purple-300">
-                  Blog
+              <a className="group flex items-center py-3" href="#projects">
+                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-400 group-focus-visible:w-16 group-focus-visible:bg-slate-400 motion-reduce:transition-none"></span>
+                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-300 group-focus-visible:text-slate-300">
+                  Projects
                 </span>
               </a>
             </li>
@@ -55,7 +55,7 @@ export default function Header() {
       <ul className="ml-1 mt-8 flex items-center" aria-label="Social media">
         <li className="mr-5 text-xs shrink-0">
           <a
-            className="block hover:text-purple-300 transition-colors duration-300 transform hover:scale-110"
+            className="block hover:text-slate-300 transition-colors duration-300 transform hover:scale-110"
             href="https://github.com"
             target="_blank"
             rel="noreferrer noopener"
@@ -68,8 +68,8 @@ export default function Header() {
         </li>
         <li className="mr-5 text-xs shrink-0">
           <a
-            className="block hover:text-blue-400 transition-colors duration-300 transform hover:scale-110"
-            href="https://linkedin.com"
+            className="block hover:text-slate-300 transition-colors duration-300 transform hover:scale-110"
+            href="https://www.linkedin.com/in/matis-gaudin-0b220631b/"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"
@@ -81,7 +81,7 @@ export default function Header() {
         </li>
         <li className="mr-5 text-xs shrink-0">
           <a
-            className="block hover:text-indigo-400 transition-colors duration-300 transform hover:scale-110"
+            className="block hover:text-slate-300 transition-colors duration-300 transform hover:scale-110"
             href="https://twitter.com"
             target="_blank"
             rel="noreferrer noopener"

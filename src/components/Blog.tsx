@@ -57,7 +57,7 @@ export default function Blog() {
                     <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>
-                    <span className="inline-flex items-center rounded-full bg-purple-500/10 px-2 py-1 text-xs font-medium text-purple-300">
+                    <span className="inline-flex items-center rounded-full bg-purple-500/10 px-3 py-1 text-xs font-medium text-purple-300">
                       {post.category}
                     </span>
                   </div>
@@ -93,7 +93,7 @@ export default function Blog() {
                   <ul className="mt-3 flex flex-wrap gap-1" aria-label="Tags">
                     {post.tags.map((tag, tagIndex) => (
                       <li key={tagIndex}>
-                        <span className="inline-flex items-center rounded-full bg-slate-800/50 px-2 py-1 text-xs text-slate-400 border border-slate-700/50">
+                        <span className="inline-flex items-center rounded-full bg-slate-800/50 px-3 py-1 text-xs text-slate-400 border border-slate-700/50">
                           {tag}
                         </span>
                       </li>
@@ -157,7 +157,17 @@ export default function Blog() {
       {/* Footer */}
       <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0 mt-24">
         <p>
-          Loosely designed in{" "}
+          Heavily inspired by{" "}
+          <a
+            href="https://brittanychiang.com/"
+            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Brittany Chiang (opens in a new tab)"
+          >
+            Brittany Chiang
+          </a>
+          's incredible design. Loosely designed in{" "}
           <a
             href="https://www.figma.com/"
             className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"

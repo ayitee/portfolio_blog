@@ -8,23 +8,23 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name - Frontend Developer",
+  title: "Matis Gaudin - Frontend Developer",
   description: "I build accessible, pixel-perfect digital experiences for the web.",
   keywords: ["frontend", "developer", "react", "nextjs", "typescript", "accessibility"],
-  authors: [{ name: "Your Name" }],
-  creator: "Your Name",
+  authors: [{ name: "Matis Gaudin" }],
+  creator: "Matis Gaudin",
   metadataBase: new URL("https://yourwebsite.com"),
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://yourwebsite.com",
-    title: "Your Name - Frontend Developer",
+    title: "Matis Gaudin - Frontend Developer",
     description: "I build accessible, pixel-perfect digital experiences for the web.",
-    siteName: "Your Name",
+    siteName: "Matis Gaudin",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Your Name - Frontend Developer",
+    title: "Matis Gaudin - Frontend Developer",
     description: "I build accessible, pixel-perfect digital experiences for the web.",
     creator: "@yourusername",
   },

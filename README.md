@@ -9,7 +9,7 @@ A modern, responsive portfolio website inspired by Brittany Chiang's design. Bui
 - ♿ Accessible and inclusive user experience
 - 🚀 Optimized performance with Next.js
 - 🌙 Dark theme with slate color palette
-- 📝 Sections for About, Experience, Projects, and Writing
+- 📝 Sections for About, Experience, Projects, and Blog
 - 🔗 Social media integration
 - 💨 Fast loading with optimized fonts and images
 
@@ -55,7 +55,7 @@ Update the following files with your personal information:
 - `src/components/About.tsx` - Personal bio and description
 - `src/components/Experience.tsx` - Work experience and companies
 - `src/components/Projects.tsx` - Portfolio projects
-- `src/components/Writing.tsx` - Blog posts and articles
+- `src/components/Blog.tsx` - Blog posts and articles
 - `src/app/layout.tsx` - Meta tags and SEO information
 
 ### Styling
