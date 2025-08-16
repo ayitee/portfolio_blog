@@ -1,8 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio Website
+
+A modern, responsive portfolio website inspired by Brittany Chiang's design. Built with Next.js, TypeScript, and Tailwind CSS.
+
+## Features
+
+- 🎨 Clean, minimalist design with smooth animations
+- 📱 Fully responsive across all devices
+- ♿ Accessible and inclusive user experience
+- 🚀 Optimized performance with Next.js
+- 🌙 Dark theme with slate color palette
+- 📝 Sections for About, Experience, Projects, and Writing
+- 🔗 Social media integration
+- 💨 Fast loading with optimized fonts and images
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+ 
+- npm, yarn, pnpm, or bun
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +41,74 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Customization
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Personal Information
 
-## Learn More
+Update the following files with your personal information:
 
-To learn more about Next.js, take a look at the following resources:
+- `src/components/Header.tsx` - Name, title, and social links
+- `src/components/About.tsx` - Personal bio and description
+- `src/components/Experience.tsx` - Work experience and companies
+- `src/components/Projects.tsx` - Portfolio projects
+- `src/components/Writing.tsx` - Blog posts and articles
+- `src/app/layout.tsx` - Meta tags and SEO information
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Styling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The website uses Tailwind CSS with a custom color palette:
 
-## Deploy on Vercel
+- Primary: Slate tones
+- Accent: Teal
+- Background: Dark slate
+- Text: Light slate
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Customize colors in `src/app/globals.css` and component files.
+
+## Tech Stack
+
+- **Framework:** Next.js 15
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Font:** Inter
+- **Deployment:** Vercel (recommended)
+
+## Scripts
+
+```bash
+npm run dev      # Start development server
+npm run build    # Build for production
+npm run start    # Start production server
+npm run lint     # Run ESLint
+```
+
+## Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with default settings
+
+### Other Platforms
+
+The website can be deployed to any platform that supports Node.js:
+
+- Netlify
+- AWS Amplify
+- Railway
+- Digital Ocean App Platform
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## Acknowledgments
+
+Design inspired by [Brittany Chiang](https://brittanychiang.com/)
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
