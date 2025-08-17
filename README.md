@@ -3,7 +3,7 @@
 
 ## What is this?
 
-This is V2 of my portfolio website, being built as we speak, with much needed cleaner looks AND CODE, though heavily inspired by Brittany Chiang's
+This is V2 of my portfolio website, being built as we speak, with much needed cleaner looks AND CODE, though heavily inspired by Brittany Chiang's.
 
 V3 Will feature a more personal and thought out look, less heavily impacted by inspirations, as this version serves the purpose of a temporary solution, with BTS season coming soon.
 
