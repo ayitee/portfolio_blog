@@ -7,7 +7,7 @@ export default function About() {
       
       <div>
         <p className="mb-4 text-slate-300">
-          Hello there! I'm Matis Gaudin, an 18-year-old student from Bordeaux, France, currently studying at{" "}
+          Hello there! I&apos;m Matis Gaudin, an 18-year-old student from Bordeaux, France, currently studying at{" "}
           <a
             className="font-medium text-slate-300 hover:text-white focus-visible:text-white transition-colors duration-300"
             href="https://www.epitech.eu/"
@@ -16,11 +16,11 @@ export default function About() {
             aria-label="EPITECH Digital School (opens in a new tab)"
           >
             EPITECH
-          </a>. I'm passionate about technology, finance, AI & ML, and game development.
+          </a>. I&apos;m passionate about technology, finance, AI &amp; ML, and game development.
         </p>
         
         <p className="mb-4 text-slate-300">
-          Currently, I'm a Junior Full-stack Developer at{" "}
+          Currently, I&apos;m a Junior Full-stack Developer at{" "}
           <a
             className="font-medium text-slate-300 hover:text-white focus-visible:text-white transition-colors duration-300"
             href="https://www.capgemini.com/"
@@ -39,7 +39,7 @@ export default function About() {
           >
             "Beyond the Sea"
           </a>{" "}
-          where I'm developing a demonstration of kite sail control using augmented reality.
+          where I&apos;m developing a demonstration of kite sail control using augmented reality.
         </p>
         
         <p className="mb-4 text-slate-300">
@@ -57,7 +57,7 @@ export default function About() {
         </p>
         
         <p className="text-slate-300">
-          In my spare time, I enjoy working on personal projects, exploring new technologies, and contributing to the game development community. Feel free to message me if you have any questions - I'll be happy to share the knowledge I've earned!
+          In my spare time, I enjoy working on personal projects, exploring new technologies, and contributing to the game development community. Feel free to message me if you have any questions - I&apos;ll be happy to share the knowledge I&apos;ve earned!
         </p>
       </div>
     </section>
