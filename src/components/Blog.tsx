@@ -168,7 +168,7 @@ export default function Blog() {
           >
             Brittany Chiang
           </a>
-          's incredible design. Loosely designed in{" "}
+          &apos;s incredible design. Loosely designed in{" "}
           <a
             href="https://www.figma.com/"
             className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
