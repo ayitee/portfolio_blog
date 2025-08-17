@@ -1,119 +1,49 @@
-# Portfolio Website
-
-A modern, responsive portfolio website inspired by Brittany Chiang's design. Built with Next.js, TypeScript, and Tailwind CSS.
-
-## Features
-
-- 🎨 Clean, minimalist design with smooth animations
-- 📱 Fully responsive across all devices
-- ♿ Accessible and inclusive user experience
-- 🚀 Optimized performance with Next.js
-- 🌙 Dark theme with slate color palette
-- 📝 Sections for About, Experience, Projects, and Blog
-- 🔗 Social media integration
-- 💨 Fast loading with optimized fonts and images
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js 18+ 
-- npm, yarn, pnpm, or bun
-
-### Installation
-
-1. Clone the repository
-2. Install dependencies:
-
-```bash
-npm install
 
 # Portfolio Blog
 
-## Overview
+## What is this?
 
-This project is a sleek, modern portfolio and blog built with Next.js, TypeScript, and Tailwind CSS. The design and structure are inspired by Brittany Chiang's renowned portfolio, focusing on clarity, minimalism, and a seamless user experience.
+This is V2 of my portfolio website, being built as we speak, with much needed cleaner looks AND CODE, though heavily inspired by Brittany Chiang's
 
-## Inspirations
+V3 Will feature a more personal and thought out look, less heavily impacted by inspirations, as this version serves the purpose of a temporary solution, with BTS season coming soon.
 
-The layout, sectioning, and interactive elements draw direct inspiration from Brittany Chiang's portfolio (https://brittanychiang.com/). The goal was to create a personal site that is both visually appealing and highly functional, with a strong emphasis on clean code and accessibility.
+## How does it work?
 
-## Features
+The site is organized into modular sections:
+- About
+- Experience
+- Projects
+- Blog
 
-- About, Experience, Projects, and Blog sections
-- Responsive, modern UI
-- Animated backgrounds and transitions
-- Easy content management via modular components
+Each section is implemented as a reusable React component, styled with Tailwind CSS for consistency and flexibility. The design emphasizes clarity, minimalism, and smooth user interactions.
 
-## Tech Stack
+## Styling
 
-- Next.js
-- TypeScript
-- Tailwind 
+The website uses Tailwind CSS with a custom color palette:
 
-## Getting Started
-
-1. Install dependencies:
-	```bash
-	npm install
-	```
-2. Start the development server:
-	```bash
-	npm run dev
-	```
-
-## Customization
-
-Content and styles can be easily updated in the `src/components` and `src/app` directories. The project is structured for straightforward modification and extension.
-
-## License
-
-MIT License
+- Primary: Slate tones
+- Accent: Teal
 - Background: Dark slate
 - Text: Light slate
 
-Customize colors in `src/app/globals.css` and component files.
+Feel free to Customize theme in src/app/globals.css and component files.
 
-## Tech Stack
+## Technology
 
-- **Framework:** Next.js 15
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS
-- **Font:** Inter
-- **Deployment:** Vercel (recommended)
-
-## Scripts
-
-```bash
-npm run dev      # Start development server
-npm run build    # Build for production
-npm run start    # Start production server
-npm run lint     # Run ESLint
-```
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Inter font
+- Vercel (recommended for deployment)
 
 ## Deployment
 
-### Vercel (Recommended)
+This site can be deployed to any Node.js-compatible platform. For more details, see the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying).
 
-1. Push your code to GitHub
-2. Connect your repository to [Vercel](https://vercel.com)
-3. Deploy with default settings
+## Inspiration
 
-### Other Platforms
-
-The website can be deployed to any platform that supports Node.js:
-
-- Netlify
-- AWS Amplify
-- Railway
-- Digital Ocean App Platform
+Design and structure mainly inspired by [Brittany Chiang](https://brittanychiang.com/).
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-
-Design inspired by [Brittany Chiang](https://brittanychiang.com/)
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open source under the [MIT License](LICENSE).
