@@ -37,7 +37,7 @@ export default function About() {
             rel="noreferrer noopener"
             aria-label="Beyond the Sea (opens in a new tab)"
           >
-            "Beyond the Sea"
+            &quot;Beyond the Sea&quot;
           </a>{" "}
           where I&apos;m developing a demonstration of kite sail control using augmented reality.
         </p>
