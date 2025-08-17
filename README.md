@@ -27,43 +27,48 @@ A modern, responsive portfolio website inspired by Brittany Chiang's design. Bui
 
 ```bash
 npm install
-# or
-yarn install
-# or
-pnpm install
-```
 
-3. Run the development server:
+# Portfolio Blog
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Overview
 
-4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is a sleek, modern portfolio and blog built with Next.js, TypeScript, and Tailwind CSS. The design and structure are inspired by Brittany Chiang's renowned portfolio, focusing on clarity, minimalism, and a seamless user experience.
+
+## Inspirations
+
+The layout, sectioning, and interactive elements draw direct inspiration from Brittany Chiang's portfolio (https://brittanychiang.com/). The goal was to create a personal site that is both visually appealing and highly functional, with a strong emphasis on clean code and accessibility.
+
+## Features
+
+- About, Experience, Projects, and Blog sections
+- Responsive, modern UI
+- Animated backgrounds and transitions
+- Easy content management via modular components
+
+## Tech Stack
+
+- Next.js
+- TypeScript
+- Tailwind 
+
+## Getting Started
+
+1. Install dependencies:
+	```bash
+	npm install
+	```
+2. Start the development server:
+	```bash
+	npm run dev
+	```
 
 ## Customization
 
-### Personal Information
+Content and styles can be easily updated in the `src/components` and `src/app` directories. The project is structured for straightforward modification and extension.
 
-Update the following files with your personal information:
+## License
 
-- `src/components/Header.tsx` - Name, title, and social links
-- `src/components/About.tsx` - Personal bio and description
-- `src/components/Experience.tsx` - Work experience and companies
-- `src/components/Projects.tsx` - Portfolio projects
-- `src/components/Blog.tsx` - Blog posts and articles
-- `src/app/layout.tsx` - Meta tags and SEO information
-
-### Styling
-
-The website uses Tailwind CSS with a custom color palette:
-
-- Primary: Slate tones
-- Accent: Teal
+MIT License
 - Background: Dark slate
 - Text: Light slate
 
