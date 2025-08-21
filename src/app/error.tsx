@@ -16,13 +16,7 @@ export default function Error({
   }, [error])
 
   return (
-    <div className="relative min-h-screen text-slate-300 antialiased selection:bg-slate-400 selection:text-slate-900">
-      {/* Animated background elements - Grayscale theme for errors */}
-      <div className="fixed inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-slate-500/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-gray-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        <div className="absolute top-3/4 left-1/3 w-64 h-64 bg-zinc-500/10 rounded-full blur-3xl animate-pulse delay-2000"></div>
-      </div>
+  <div className="relative min-h-screen text-slate-300 antialiased selection:bg-slate-400 selection:text-slate-900">
       
       <div className="relative flex min-h-screen flex-col items-center justify-center px-6 py-12 md:px-12 md:py-20 lg:px-24">
         <div className="text-center max-w-md">
@@ -45,7 +39,7 @@ export default function Error({
           </div>
           
           {/* Error Number/Title */}
-          <h1 className="text-6xl font-bold tracking-tight bg-gradient-to-r from-slate-400 via-gray-400 to-zinc-400 bg-clip-text text-transparent sm:text-7xl">
+          <h1 className="text-6xl font-bold tracking-tight text-white sm:text-7xl">
             Oops!
           </h1>
           
@@ -74,7 +68,7 @@ export default function Error({
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <button
               onClick={reset}
-              className="rounded-md bg-gradient-to-r from-slate-600 to-gray-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:from-slate-500 hover:to-gray-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 transition-all duration-300"
+              className="rounded-md bg-slate-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600 transition-all duration-300"
             >
               Try again
             </button>

@@ -40,8 +40,9 @@ export default function Blog() {
 
   return (
     <section id="blog" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Blog posts">
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-gradient-to-r from-slate-900/90 to-purple-900/20 backdrop-blur px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-purple-300 lg:sr-only">Blog</h2>
+  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen backdrop-blur px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+       style={{background:'color-mix(in srgb, var(--color-bg-muted) 85%, transparent)'}}>
+    <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only" style={{color:'var(--color-accent)'}}>Blog</h2>
       </div>
       
       <div>
@@ -49,22 +50,23 @@ export default function Blog() {
           {blogPosts.map((post, index) => (
             <li key={index} className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:from-purple-900/20 lg:group-hover:to-indigo-900/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(168,85,247,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_1px_0_0_rgba(218,241,222,0.08)] lg:group-hover:drop-shadow-lg" style={{background:'color-mix(in srgb, var(--color-surface) 18%, transparent)'}}></div>
                 
                 <div className="z-10 sm:order-2 sm:col-span-6">
-                  <div className="mb-2 flex items-center gap-2 text-xs text-slate-500">
+                  <div className="mb-2 flex items-center gap-2 text-xs text-[var(--color-text)] opacity-60">
                     <time dateTime={post.date}>{post.date}</time>
                     <span>•</span>
                     <span>{post.readTime}</span>
                     <span>•</span>
-                    <span className="inline-flex items-center rounded-full bg-purple-500/10 px-3 py-1 text-xs font-medium text-purple-300">
+                    <span className="inline-flex items-center rounded-full px-3 py-1 text-xs font-medium"
+                      style={{background:'color-mix(in srgb, var(--color-surface) 20%, transparent)', color:'var(--color-text)'}}>
                       {post.category}
                     </span>
                   </div>
                   
                   <h3>
                     <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-purple-300 focus-visible:text-purple-300 group/link text-base transition-colors duration-300"
+                      className="inline-flex items-baseline font-medium leading-tight text-[var(--color-text)] opacity-90 hover:opacity-100 group/link text-base transition-colors duration-300"
                       href={post.url}
                       aria-label={`${post.title} (opens blog post)`}
                     >
@@ -87,14 +89,15 @@ export default function Blog() {
                       </span>
                     </a>
                   </h3>
-                  <p className="mt-2 text-sm leading-normal text-slate-300">{post.excerpt.replace(/'/g, "&apos;")}</p>
+                  <p className="mt-2 text-sm leading-normal text-[var(--color-text)] opacity-70">{post.excerpt.replace(/'/g, "&apos;")}</p>
                   
-                  <p className="mt-2 text-sm leading-normal text-slate-300">{post.excerpt}</p>
+                  <p className="mt-2 text-sm leading-normal text-[var(--color-text)] opacity-70">{post.excerpt}</p>
                   
                   <ul className="mt-3 flex flex-wrap gap-1" aria-label="Tags">
                     {post.tags.map((tag, tagIndex) => (
                       <li key={tagIndex}>
-                        <span className="inline-flex items-center rounded-full bg-slate-800/50 px-3 py-1 text-xs text-slate-400 border border-slate-700/50">
+                        <span className="inline-flex items-center rounded-full px-3 py-1 text-xs"
+                          style={{background:'color-mix(in srgb, var(--color-surface) 20%, transparent)', color:'var(--color-text)', border:'1px solid', borderColor:'color-mix(in srgb, var(--color-surface-2) 50%, transparent)'}}>
                           {tag}
                         </span>
                       </li>
@@ -104,10 +107,11 @@ export default function Blog() {
                 
                 <div className="z-10 sm:order-1 sm:col-span-2">
                   <div className="relative">
-                    <div className="border-2 border-purple-500/20 rounded overflow-hidden hover:border-purple-400/40 transition-colors duration-300">
+                    <div className="border-2 rounded overflow-hidden transition-colors duration-300"
+                      style={{borderColor:'color-mix(in srgb, var(--color-surface-2) 25%, transparent)'}}>
                       {/* Blog post thumbnail */}
-                      <div className="bg-gradient-to-br from-slate-800 to-purple-900/50 aspect-video flex items-center justify-center">
-                        <div className="text-slate-400 text-sm flex flex-col items-center gap-1">
+                      <div className="aspect-video flex items-center justify-center" style={{background:'color-mix(in srgb, var(--color-surface) 40%, transparent)'}}>
+                        <div className="text-[var(--color-text)] opacity-60 text-sm flex flex-col items-center gap-1">
                           <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z" clipRule="evenodd" />
                           </svg>
@@ -124,16 +128,16 @@ export default function Blog() {
         
         <div className="mt-12">
           <a
-            className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group hover:text-purple-300 transition-colors duration-300"
+            className="inline-flex items-center font-medium leading-tight text-[var(--color-text)] opacity-90 group hover:opacity-100 transition-colors duration-300"
             aria-label="View All Blog Posts"
             href="/blog"
           >
             <span>
-              <span className="border-b border-transparent pb-px transition group-hover:border-purple-300 motion-reduce:transition-none">
+              <span className="border-b border-transparent pb-px transition group-hover:border-[color:var(--color-accent)] motion-reduce:transition-none">
                 View All
               </span>
               <span className="whitespace-nowrap">
-                <span className="border-b border-transparent pb-px transition group-hover:border-purple-300 motion-reduce:transition-none">
+                <span className="border-b border-transparent pb-px transition group-hover:border-[color:var(--color-accent)] motion-reduce:transition-none">
                   Blog Posts
                 </span>
                 <svg
@@ -156,12 +160,12 @@ export default function Blog() {
       </div>
       
       {/* Footer */}
-      <footer className="max-w-md pb-16 text-sm text-slate-500 sm:pb-0 mt-24">
+  <footer className="max-w-md pb-16 text-sm text-[var(--color-text)] opacity-60 sm:pb-0 mt-24">
         <p>
           Heavily inspired by{" "}
           <a
             href="https://brittanychiang.com/"
-            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Brittany Chiang (opens in a new tab)"
@@ -171,7 +175,7 @@ export default function Blog() {
           &apos;s incredible design. Loosely designed in{" "}
           <a
             href="https://www.figma.com/"
-            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Figma (opens in a new tab)"
@@ -181,7 +185,7 @@ export default function Blog() {
           and coded in{" "}
           <a
             href="https://code.visualstudio.com/"
-            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Visual Studio Code (opens in a new tab)"
@@ -191,7 +195,7 @@ export default function Blog() {
           . Built with{" "}
           <a
             href="https://nextjs.org/"
-            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Next.js (opens in a new tab)"
@@ -201,7 +205,7 @@ export default function Blog() {
           and{" "}
           <a
             href="https://tailwindcss.com/"
-            className="font-medium text-slate-400 hover:text-purple-300 focus-visible:text-purple-300 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Tailwind CSS (opens in a new tab)"

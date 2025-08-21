@@ -8,7 +8,7 @@ import AnimatedBackground from '@/components/AnimatedBackground'
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen text-slate-300 antialiased selection:bg-slate-400 selection:text-slate-900">
+  <div className="relative min-h-screen text-slate-300 antialiased selection:bg-slate-400 selection:text-slate-900">
       {/* Interactive animated background */}
       <AnimatedBackground />
 

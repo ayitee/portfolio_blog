@@ -1,13 +1,10 @@
 'use client'
 
-import AnimatedBackground from '@/components/AnimatedBackground'
 import Link from 'next/link'
 
 export default function NotFound() {
   return (
-    <div className="relative min-h-screen text-slate-300 antialiased bg-gradient-to-br from-red-950/90 via-orange-950/70 to-yellow-950/50">
-      {/* Interactive animated background */}
-      <AnimatedBackground isErrorPage={true} />
+  <div className="relative min-h-screen text-slate-300 antialiased bg-slate-950">
       
       <div className="relative mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24">
         {/* Back to Home link */}

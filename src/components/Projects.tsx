@@ -34,8 +34,9 @@ export default function Projects() {
 
   return (
     <section id="projects" className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24" aria-label="Selected projects">
-      <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen bg-gradient-to-r from-slate-900/90 to-slate-800/20 backdrop-blur px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0">
-        <h2 className="text-sm font-bold uppercase tracking-widest text-slate-300 lg:sr-only">Projects</h2>
+  <div className="sticky top-0 z-20 -mx-6 mb-4 w-screen backdrop-blur px-6 py-5 md:-mx-12 md:px-12 lg:sr-only lg:relative lg:top-auto lg:mx-auto lg:w-full lg:px-0 lg:py-0 lg:opacity-0"
+       style={{background:'color-mix(in srgb, var(--color-bg-muted) 85%, transparent)'}}>
+    <h2 className="text-sm font-bold uppercase tracking-widest lg:sr-only" style={{color:'var(--color-accent)'}}>Projects</h2>
       </div>
       
       <div>
@@ -43,12 +44,12 @@ export default function Projects() {
           {projects.map((project, index) => (
             <li key={index} className="mb-12">
               <div className="group relative grid gap-4 pb-1 transition-all sm:grid-cols-8 sm:gap-8 md:gap-4 lg:hover:!opacity-100 lg:group-hover/list:opacity-50">
-                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:bg-gradient-to-r lg:group-hover:from-slate-800/20 lg:group-hover:to-slate-700/20 lg:group-hover:shadow-[inset_0_1px_0_0_rgba(148,163,184,0.1)] lg:group-hover:drop-shadow-lg"></div>
+                <div className="absolute -inset-x-4 -inset-y-4 z-0 hidden rounded-md transition motion-reduce:transition-none lg:-inset-x-6 lg:block lg:group-hover:shadow-[inset_0_1px_0_0_rgba(218,241,222,0.08)] lg:group-hover:drop-shadow-lg" style={{background:'color-mix(in srgb, var(--color-surface) 18%, transparent)'}}></div>
                 
                 <div className="z-10 sm:order-2 sm:col-span-6">
                   <h3>
                     <a
-                      className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-slate-100 focus-visible:text-slate-100 group/link text-base transition-colors duration-300"
+                      className="inline-flex items-baseline font-medium leading-tight text-[var(--color-text)] opacity-90 hover:opacity-100 group/link text-base transition-colors duration-300"
                       href={project.url}
                       target="_blank"
                       rel="noreferrer noopener"
@@ -74,12 +75,13 @@ export default function Projects() {
                     </a>
                   </h3>
                   
-                  <p className="mt-2 text-sm leading-normal text-slate-300">{project.description}</p>
+                  <p className="mt-2 text-sm leading-normal text-[var(--color-text)] opacity-70">{project.description}</p>
                   
                   <ul className="mt-2 flex flex-wrap" aria-label="Technologies used">
                     {project.technologies.map((tech, techIndex) => (
                       <li key={techIndex} className="mr-1.5 mt-2">
-                        <div className="flex items-center rounded-full bg-gradient-to-r from-slate-600/20 to-slate-500/20 px-3 py-1 text-xs font-medium leading-5 text-slate-300 border border-slate-500/30 hover:border-slate-400/50 transition-colors duration-300">
+            <div className="flex items-center rounded-full px-3 py-1 text-xs font-medium leading-5 border transition-colors duration-300"
+              style={{background:'color-mix(in srgb, var(--color-surface) 20%, transparent)', color:'var(--color-text)', borderColor:'color-mix(in srgb, var(--color-surface-2) 50%, transparent)'}}>
                           {tech}
                         </div>
                       </li>
@@ -89,10 +91,11 @@ export default function Projects() {
                 
                 <div className="z-10 sm:order-1 sm:col-span-2">
                   <div className="relative">
-                    <div className="border-2 border-slate-500/20 rounded overflow-hidden hover:border-slate-400/40 transition-colors duration-300">
+                    <div className="border-2 rounded overflow-hidden transition-colors duration-300"
+                      style={{borderColor:'color-mix(in srgb, var(--color-surface-2) 25%, transparent)'}}>
                       {/* Placeholder for project image */}
-                      <div className="bg-gradient-to-br from-slate-800 to-slate-700/50 aspect-video flex items-center justify-center">
-                        <div className="text-slate-400 text-sm">Project Image</div>
+                      <div className="aspect-video flex items-center justify-center" style={{background:'color-mix(in srgb, var(--color-surface) 40%, transparent)'}}>
+                        <div className="text-[var(--color-text)] opacity-60 text-sm">Project Image</div>
                       </div>
                     </div>
                   </div>
@@ -104,16 +107,16 @@ export default function Projects() {
         
         <div className="mt-12">
           <a
-            className="inline-flex items-center font-medium leading-tight text-slate-200 font-semibold text-slate-200 group hover:text-slate-100 transition-colors duration-300"
+            className="inline-flex items-center font-medium leading-tight text-[var(--color-text)] opacity-90 group hover:opacity-100 transition-colors duration-300"
             aria-label="View Full Project Archive"
             href="/archive"
           >
             <span>
-              <span className="border-b border-transparent pb-px transition group-hover:border-slate-300 motion-reduce:transition-none">
+              <span className="border-b border-transparent pb-px transition group-hover:border-[color:var(--color-accent)] motion-reduce:transition-none">
                 View Full Project
               </span>
               <span className="whitespace-nowrap">
-                <span className="border-b border-transparent pb-px transition group-hover:border-slate-300 motion-reduce:transition-none">
+                <span className="border-b border-transparent pb-px transition group-hover:border-[color:var(--color-accent)] motion-reduce:transition-none">
                   Archive
                 </span>
                 <svg

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 interface AnimatedBackgroundProps {
   isErrorPage?: boolean
@@ -10,6 +10,8 @@ export default function AnimatedBackground({ isErrorPage = false }: AnimatedBack
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMobile, setIsMobile] = useState(false)
+  const rafId = useRef<number | null>(null)
+  const lastMouse = useRef({ x: 0, y: 0 })
 
   useEffect(() => {
     // Simple mobile detection
@@ -20,40 +22,40 @@ export default function AnimatedBackground({ isErrorPage = false }: AnimatedBack
 
     if (!mobile) {
       const handleMouseMove = (e: MouseEvent) => {
-        setMousePosition({ x: e.clientX, y: e.clientY })
+        lastMouse.current = { x: e.clientX, y: e.clientY }
+        if (rafId.current == null) {
+          rafId.current = requestAnimationFrame(() => {
+            setMousePosition(lastMouse.current)
+            rafId.current = null
+          })
+        }
       }
       window.addEventListener('mousemove', handleMouseMove)
-      return () => window.removeEventListener('mousemove', handleMouseMove)
+      return () => {
+        window.removeEventListener('mousemove', handleMouseMove)
+        if (rafId.current) cancelAnimationFrame(rafId.current)
+      }
     }
   }, [])
 
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none">
-      {/* First orb - top left area */}
-      <div className={`absolute top-1/4 left-1/4 w-96 h-96 rounded-full blur-3xl animate-float-1 ${
-        isErrorPage ? 'bg-red-500/15' : 'bg-slate-500/8'
-      }`} />
-
-      {/* Second orb - bottom right area */}
-      <div className={`absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full blur-3xl animate-float-2 ${
-        isErrorPage ? 'bg-orange-500/15' : 'bg-gray-400/6'
-      }`} />
-
-      {/* Third orb - original position */}
-      <div className={`absolute top-3/4 left-1/3 w-64 h-64 rounded-full blur-3xl animate-float-3 ${
-        isErrorPage ? 'bg-yellow-500/15' : 'bg-zinc-500/8'
-      }`} />
-
-      {/* Mouse-following orb (desktop only) */}
+      {/* Mouse-following glow only (desktop) — larger and more diffused */}
       {!isMobile && (
         <div
-          className={`absolute w-32 h-32 rounded-full blur-2xl ${
-            isErrorPage ? 'bg-red-300/40' : 'bg-white/20'
-          }`}
+          className={`absolute w-[60rem] h-[60rem] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-60`}
           style={{
-            left: mousePosition.x - 64,
-            top: mousePosition.y - 64,
-            transform: 'translate(0, 0)',
+            // Soft radial gradient similar to Brittany Chiang's glow
+            background: `radial-gradient(circle at center,
+              color-mix(in srgb, var(--color-accent) 55%, transparent) 0%,
+              color-mix(in srgb, var(--color-accent) 35%, transparent) 20%,
+              color-mix(in srgb, var(--color-accent) 10%, transparent) 45%,
+              transparent 70%
+            )`,
+            filter: 'blur(120px)',
+            mixBlendMode: 'screen',
+            left: mousePosition.x,
+            top: mousePosition.y,
           }}
         />
       )}

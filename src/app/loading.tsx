@@ -1,6 +1,6 @@
 export default function Loading() {
   return (
-    <div className="fixed inset-0 flex items-center justify-center min-h-screen" style={{ background: 'linear-gradient(135deg, #0a0a0b 0%, #111112 50%, #171718 100%)' }}>
+  <div className="fixed inset-0 flex items-center justify-center min-h-screen bg-slate-950">
       <div className="flex flex-col items-center justify-center">
         {/* Sleek Spinner */}
         <div>

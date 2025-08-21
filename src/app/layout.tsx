@@ -41,7 +41,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#22232a" />
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
       </head>
-      <body className="antialiased">{children}
+  <body className="antialiased">{children}
       </body>
     </html>
   );
