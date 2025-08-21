@@ -2,11 +2,7 @@
 
 import { useState, useEffect, useRef } from 'react'
 
-interface AnimatedBackgroundProps {
-  isErrorPage?: boolean
-}
-
-export default function AnimatedBackground({ isErrorPage = false }: AnimatedBackgroundProps) {
+export default function AnimatedBackground() {
 
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
   const [isMobile, setIsMobile] = useState(false)

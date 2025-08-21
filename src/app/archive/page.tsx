@@ -193,8 +193,8 @@ export default function Archive() {
                         className="group border-b transition-colors duration-300 hover:bg-[var(--row-hover)]"
                         style={{
                           borderColor: 'color-mix(in srgb, var(--color-surface-2) 30%, transparent)',
-                          ['--row-hover' as any]: 'color-mix(in srgb, var(--color-surface) 14%, transparent)',
-                        }}
+                          ['--row-hover']: 'color-mix(in srgb, var(--color-surface) 14%, transparent)',
+                        } as React.CSSProperties}
                       >
                         <td className="py-6 px-2 align-top whitespace-nowrap opacity-80">{project.year}</td>
                         <td className="py-6 px-2">
