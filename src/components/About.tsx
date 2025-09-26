@@ -14,7 +14,6 @@ export default function About() {
             href="https://www.epitech.eu/"
             target="_blank"
             rel="noreferrer noopener"
-            aria-label="EPITECH Digital School (opens in a new tab)"
           >
             EPITECH
           </a>. I&apos;m passionate about technology, finance, AI &amp; ML, and game development.

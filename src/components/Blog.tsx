@@ -160,12 +160,12 @@ export default function Blog() {
       </div>
       
       {/* Footer */}
-  <footer className="max-w-md pb-16 text-sm text-[var(--color-text)] opacity-60 sm:pb-0 mt-24">
+  <footer className="max-w-md pb-16 text-sm text-[var(--color-text)] opacity-70 sm:pb-0 mt-24">
         <p>
           Heavily inspired by{" "}
           <a
             href="https://brittanychiang.com/"
-            className="font-medium text-[var(--color-text)] opacity-80 hover:opacity-100 transition-colors duration-300"
+            className="font-medium text-[var(--color-text)] opacity-90 hover:opacity-100 transition-colors duration-300"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Brittany Chiang (opens in a new tab)"

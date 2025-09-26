@@ -108,7 +108,6 @@ export default function Projects() {
         <div className="mt-12">
           <a
             className="inline-flex items-center font-medium leading-tight text-[var(--color-text)] opacity-90 group hover:opacity-100 transition-colors duration-300"
-            aria-label="View Full Project Archive"
             href="/archive"
           >
             <span className="border-b border-transparent pb-px transition group-hover:border-[color:var(--color-accent)] motion-reduce:transition-none whitespace-nowrap">

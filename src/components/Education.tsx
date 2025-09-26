@@ -46,7 +46,6 @@ export default function Education() {
                         href={edu.schoolUrl}
                         target="_blank"
                         rel="noreferrer noopener"
-                        aria-label={`${edu.degree} at ${edu.school} (opens in a new tab)`}
                       >
                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                         <span>
